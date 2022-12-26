@@ -897,6 +897,50 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-\[15rem\] {
+  margin-top: 15rem;
+}
+
+.mt-\[14rem\] {
+  margin-top: 14rem;
+}
+
+.mt-\[14\.8rem\] {
+  margin-top: 14.8rem;
+}
+
+.mt-\[14\.9rem\] {
+  margin-top: 14.9rem;
+}
+
+.mt-\[2\.1rem\] {
+  margin-top: 2.1rem;
+}
+
+.mt-\[2\.2rem\] {
+  margin-top: 2.2rem;
+}
+
+.mt-\[2\.5rem\] {
+  margin-top: 2.5rem;
+}
+
+.mt-\[2\.3rem\] {
+  margin-top: 2.3rem;
+}
+
+.mt-\[0\.8rem\] {
+  margin-top: 0.8rem;
+}
+
+.mt-\[2\.6rem\] {
+  margin-top: 2.6rem;
+}
+
+.mt-\[2\.7rem\] {
+  margin-top: 2.7rem;
+}
+
 .grid {
   display: grid;
 }
@@ -1390,6 +1434,18 @@ video {
   line-height: 1.5rem;
 }
 
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[1\.7rem\] {
+  font-size: 1.7rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1446,6 +1502,22 @@ video {
   letter-spacing: 0.065rem;
 }
 
+.tracking-\[0\.3\] {
+  letter-spacing: 0.3;
+}
+
+.tracking-\[0\.2\] {
+  letter-spacing: 0.2;
+}
+
+.tracking-\[0\.5\] {
+  letter-spacing: 0.5;
+}
+
+.tracking-\[0\.23rem\] {
+  letter-spacing: 0.23rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 100% 100% / var(--tw-text-opacity));
@@ -1454,6 +1526,11 @@ video {
 .text-error {
   --tw-text-opacity: 1;
   color: hsl(0 100% 66% / var(--tw-text-opacity));
+}
+
+.text-darkGrayishViolet {
+  --tw-text-opacity: 1;
+  color: hsl(279 6% 55% / var(--tw-text-opacity));
 }
 
 .text-opacity-75 {
