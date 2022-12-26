@@ -18,7 +18,145 @@
 
     <script src="./index.js" defer></script>
   </head>
-  <body class="grid min-h-screen">
+  <body class="grid min-h-screen grid-flow-col grid-cols-[30.25rem_auto]">
+    <section class="relative grid overflow-visible">
+      <div
+        class="relative ml-[10.2rem] mt-[7.5rem] -mr-[10.2rem] h-[15.4rem] w-[27.95rem] place-self-start px-[2rem] shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)]"
+      >
+        <div class="mt-[1.85rem] grid w-fit grid-flow-col">
+          <div
+            class="h-[2.9rem] w-[2.9rem] rounded-full bg-white bg-opacity-95"
+          ></div>
+          <div
+            class="ml-[1rem] h-[1.45rem] w-[1.45rem] place-self-center rounded-full border-2 border-white border-opacity-75"
+          ></div>
+        </div>
+        <div
+          class="mt-[4.1rem] text-2xl tracking-[0.352rem] text-white text-opacity-90"
+        >
+          9591 6489 6389 1011
+        </div>
+        <div
+          class="mt-[1.5rem] grid grid-flow-col text-base uppercase tracking-[0.065rem] text-white text-opacity-75"
+        >
+          <div>Felicia Leire</div>
+          <div class="place-self-end">09/26</div>
+        </div>
+        <img
+          class="absolute top-0 left-0 -z-10 h-full w-full"
+          src="./bg-card-front.png"
+          alt="card front"
+        />
+      </div>
+      <div
+        class="relative ml-[16.1rem] -mt-[6.7rem] -mr-[16.1rem] h-[15.4rem] w-[27.95rem] place-self-start shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)]"
+      >
+        <div
+          class="ml-[22.65rem] mt-[6.75rem] text-base text-white text-opacity-90"
+        >
+          123
+        </div>
+        <img
+          class="absolute top-0 left-0 -z-10 h-full w-full"
+          src="./bg-card-back.png"
+          alt="card back"
+        />
+      </div>
+      <picture
+        class="absolute top-0 left-0 -z-20 w-full bg-primaryGradientFrom"
+      >
+        <source media="(min-width: 768px)" srcset="./bg-main-desktop.png" />
+        <img
+          class="h-screen w-full object-cover"
+          src="./bg-main-mobile.png"
+          alt="main bg"
+        />
+      </picture>
+    </section>
+    <section
+      class="ml-[7.5rem] hidden w-[23.8rem] place-self-center self-start"
+    >
+      <form
+        id="card-form"
+        method="get"
+        action="./"
+        novalidate
+        class="mt-[7.5rem] grid place-self-stretch [&>*]:mt-[1.5rem] [&>*]:grid [&>*_input]:mt-[0.3rem] [&>*_input]:rounded-md [&>*_input]:border-[0.1rem] [&>*_input]:border-lightGrayishViolet [&>*_input]:py-[0.6rem] [&>*_input]:px-[1rem] [&>*_input]:text-base [&>*_input]:placeholder:text-lightGrayishViolet [&_label]:text-[0.78rem] [&_label]:uppercase [&_label]:tracking-[0.1rem] [&_label]:text-veryDarkViolet"
+        action=""
+      >
+        <label for="cardholder-name"
+          >Cardholder Name<input
+            class="relative"
+            placeholder="e.g Jane Appleseed"
+            type="text"
+            id="cardholder-name"
+            autocomplete="off"
+            name="Cardholder Name"
+            pattern="^[a-zA-Z]*$"
+            value="" /></label
+        ><label for="card-number"
+          >Card Number<input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            class="relative"
+            autocomplete="off"
+            id="card-number"
+            name="Card Number"
+            pattern="[0-9]{0,16}"
+            minlength="16"
+          />
+        </label>
+        <div class="mb-[1rem] grid grid-flow-col grid-cols-[11.8rem_auto]">
+          <div class="grid">
+            <label>Exp. Date (MM/YY)</label>
+            <div
+              class="grid grid-flow-col grid-cols-[5.2rem_5.2rem] gap-[0.4rem] [&>input]:w-[4.9rem]"
+            >
+              <input
+                class="relative"
+                autocomplete="off"
+                id="date-m"
+                name="Date Month"
+                pattern="[0-9]{0,2}"
+                minlength="2"
+                type="text"
+                placeholder="MM"
+              />
+              <input
+                class="relative"
+                autocomplete="off"
+                id="date-y"
+                name="Date Year"
+                pattern="[0-9]{0,2}"
+                minlength="2"
+                type="text"
+                placeholder="YY"
+              />
+            </div>
+          </div>
+          <label class="relative" for="cvc"
+            >CVC<input
+              type="text"
+              class="relative w-full"
+              autocomplete="off"
+              id="cvc"
+              name="CVC"
+              pattern="[0-9]{0,3}"
+              minlength="3"
+              type="text"
+              placeholder="e.g. 123"
+          /></label>
+        </div>
+        <button
+          class="rounded-md bg-veryDarkViolet py-[0.85rem] text-white text-opacity-80"
+          id="submit"
+          type="submit"
+        >
+          Confirm
+        </button>
+      </form>
+    </section>
+    <section class="bg-error"></section>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
