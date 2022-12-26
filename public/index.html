@@ -18,26 +18,30 @@
 
     <script src="./index.js" defer></script>
   </head>
-  <body class="grid min-h-screen grid-flow-col grid-cols-[30.25rem_auto]">
-    <section class="relative grid overflow-visible">
+  <body class="grid min-h-screen sm:grid-flow-col sm:grid-cols-[30.25rem_auto]">
+    <section
+      class="relative grid grid-rows-[12rem_5rem_1rem] sm:grid-rows-[22rem_20rem_auto]"
+    >
       <div
-        class="relative ml-[10.2rem] mt-[7.5rem] -mr-[10.2rem] h-[15.4rem] w-[27.95rem] place-self-start px-[2rem] shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)]"
+        class="relative z-10 order-2 ml-[0.93rem] -mt-[4.15rem] grid h-[9.85rem] w-[17.85rem] place-self-start self-start px-[2rem] shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)] sm:order-1 sm:mt-[11.7rem] sm:ml-[10.2rem] sm:h-[15.4rem] sm:w-[27.95rem]"
       >
-        <div class="mt-[1.85rem] grid w-fit grid-flow-col">
+        <div
+          class="mt-[1.1rem] grid w-fit grid-flow-col place-content-start sm:mt-[1.85rem]"
+        >
           <div
-            class="h-[2.9rem] w-[2.9rem] rounded-full bg-white bg-opacity-95"
+            class="h-[1.85rem] w-[1.85rem] rounded-full bg-white bg-opacity-95 sm:h-[2.9rem] sm:w-[2.9rem]"
           ></div>
           <div
-            class="ml-[1rem] h-[1.45rem] w-[1.45rem] place-self-center rounded-full border-2 border-white border-opacity-75"
+            class="ml-[1rem] h-[0.85rem] w-[0.85rem] place-self-center rounded-full border-2 border-white border-opacity-75 sm:h-[1.45rem] sm:w-[1.45rem]"
           ></div>
         </div>
         <div
-          class="mt-[4.1rem] text-2xl tracking-[0.352rem] text-white text-opacity-90"
+          class="mt-[1.2rem] self-start text-[1.18rem] tracking-[0.1rem] text-white text-opacity-90 sm:mt-[2.8rem] sm:text-2xl sm:tracking-[0.352rem]"
         >
           9591 6489 6389 1011
         </div>
         <div
-          class="mt-[1.5rem] grid grid-flow-col text-base uppercase tracking-[0.065rem] text-white text-opacity-75"
+          class="-mt-[0.3rem] grid grid-flow-col self-start text-[0.65rem] uppercase tracking-[0.065rem] text-white text-opacity-75 sm:text-base"
         >
           <div>Felicia Leire</div>
           <div class="place-self-end">09/26</div>
@@ -49,10 +53,10 @@
         />
       </div>
       <div
-        class="relative ml-[16.1rem] -mt-[6.7rem] -mr-[16.1rem] h-[15.4rem] w-[27.95rem] place-self-start shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)]"
+        class="relative order-1 mt-[2rem] mr-[1rem] grid h-[9.85rem] w-[17.85rem] place-self-end self-start shadow-[0px_0px_20px_-3px_rgba(0,0,0,0.1)] sm:order-2 sm:mt-[7.3rem] sm:mr-0 sm:ml-[16.1rem] sm:h-[15.4rem] sm:w-[27.95rem]"
       >
         <div
-          class="ml-[22.65rem] mt-[6.75rem] text-base text-white text-opacity-90"
+          class="absolute top-[4.35rem] left-[14.5rem] text-[0.65rem] text-white text-opacity-90 sm:left-[22.65rem] sm:top-[6.75rem] sm:text-base"
         >
           123
         </div>
@@ -62,26 +66,24 @@
           alt="card back"
         />
       </div>
-      <picture
-        class="absolute top-0 left-0 -z-20 w-full bg-primaryGradientFrom"
-      >
+      <picture class="absolute top-0 left-0 -z-20 w-full">
         <source media="(min-width: 768px)" srcset="./bg-main-desktop.png" />
         <img
-          class="h-screen w-full object-cover"
+          class="w-full object-cover sm:h-screen"
           src="./bg-main-mobile.png"
           alt="main bg"
         />
       </picture>
     </section>
     <section
-      class="ml-[7.5rem] hidden w-[23.8rem] place-self-center self-start"
+      class="mt-[1.5rem] mb-[10rem] grid w-[20.5rem] place-self-center self-start sm:ml-[7.5rem] sm:w-[23.8rem]"
     >
       <form
         id="card-form"
         method="get"
         action="./"
         novalidate
-        class="mt-[7.5rem] grid place-self-stretch [&>*]:mt-[1.5rem] [&>*]:grid [&>*_input]:mt-[0.3rem] [&>*_input]:rounded-md [&>*_input]:border-[0.1rem] [&>*_input]:border-lightGrayishViolet [&>*_input]:py-[0.6rem] [&>*_input]:px-[1rem] [&>*_input]:text-base [&>*_input]:placeholder:text-lightGrayishViolet [&_label]:text-[0.78rem] [&_label]:uppercase [&_label]:tracking-[0.1rem] [&_label]:text-veryDarkViolet"
+        class="grid place-self-stretch sm:mt-[7.5rem] [&>*]:mt-[1.2rem] [&>*]:grid sm:[&>*]:mt-[1.5rem] [&>*_input]:mt-[0.3rem] [&>*_input]:rounded-md [&>*_input]:border-[0.1rem] [&>*_input]:border-lightGrayishViolet [&>*_input]:py-[0.6rem] [&>*_input]:px-[1rem] [&>*_input]:text-base [&>*_input]:placeholder:text-lightGrayishViolet [&_label]:text-[0.78rem] [&_label]:uppercase [&_label]:tracking-[0.1rem] [&_label]:text-veryDarkViolet"
         action=""
       >
         <label for="cardholder-name"
@@ -106,7 +108,9 @@
             minlength="16"
           />
         </label>
-        <div class="mb-[1rem] grid grid-flow-col grid-cols-[11.8rem_auto]">
+        <div
+          class="mb-[0.5rem] grid grid-flow-col grid-cols-[11.8rem_auto] sm:mb-[1rem]"
+        >
           <div class="grid">
             <label>Exp. Date (MM/YY)</label>
             <div
@@ -157,7 +161,7 @@
       </form>
     </section>
     <section
-      class="ml-[7.5rem] mt-[14.9rem] grid w-[23.8rem] place-self-center self-start"
+      class="mt-[2.5rem] mb-[10rem] hidden w-[20.5rem] place-self-center self-start sm:ml-[7.5rem] sm:mt-[14.9rem] sm:w-[23.8rem]"
     >
       <img class="place-self-center" src="./icon-complete.svg" alt="" />
       <h2
